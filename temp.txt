@@ -1,0 +1,14 @@
+					cryptoCoins += `<div class="cryptoBox" id="coinsList">
+				<div class="cryptoBox-header">
+				  <img class="coinimg" src="${coin.iconUrl}" alt="bitconin">
+				  <span class="left">${coin.name}</span>
+				  <span class="right">$${Math.round(coin.price)}</span>
+				</div>
+				<div class="cryptoBox-middle">
+				  <span class="left">Next Day Predicted Price</span>
+				  <span class="right">$${Math.round(predicted.prediction)}</span>
+				</div>
+				<div class="cryptoBox-footer">
+				  <a href="test.html">View More.</a>
+				</div>
+			  </div>`
