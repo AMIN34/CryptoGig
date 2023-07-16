@@ -20,7 +20,7 @@ for i in cryptoList:
     else:
         data = []
 
-    print(f'{i} Starting')
+    #print(f'{i} Starting')
     x = lstm.prediction(f'{i}-USD', model)
     prediction = float(x) if x != "NA" else "NA"
     inner_dict = {
