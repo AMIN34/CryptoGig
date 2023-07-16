@@ -8,14 +8,14 @@ cryptoList = api_fetch.cryptoCoins
 # Create the model outside the loop
 model = lstm.create_model((None, 1))
 
-if os.path.exists('./../crypto_data/data.json'):
-    with open('./../crypto_data/data.json','w') as file:
+if os.path.exists('CryptoGig/assets/crypto_data/data.json'):
+    with open('CryptoGig/assets/crypto_data/data.json','w') as file:
         pass
     
     
 for i in cryptoList:
-    if os.path.getsize('./../crypto_data/data.json') > 0:
-        with open('./../crypto_data/data.json', 'r') as file:
+    if os.path.getsize('CryptoGig/assets/crypto_data/data.json') > 0:
+        with open('CryptoGig/assests/crypto_data/data.json', 'r') as file:
             data = json.load(file)
     else:
         data = []
