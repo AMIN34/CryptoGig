@@ -14,8 +14,8 @@ if os.path.exists('CryptoGig/assets/crypto_data/data.json'):
     
     
 for i in cryptoList:
-    if os.path.getsize('CryptoGig/assets/crypto_data/data.json') > 0:
-        with open('CryptoGig/assests/crypto_data/data.json', 'r') as file:
+    if os.path.getsize('./../crypto_data/data.json') > 0:
+        with open('./../crypto_data/data.json', 'r') as file:
             data = json.load(file)
     else:
         data = []
