@@ -6,7 +6,7 @@ on:
 
 jobs:
   run-script:
-    runs-on: linux
+    runs-on: ubuntu-latest
 
     steps:
       - name: Set up Python
